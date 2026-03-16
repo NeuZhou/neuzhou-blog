@@ -1,0 +1,65 @@
+baseURL = "https://neuzhou.github.io/"
+languageCode = "en-us"
+title = "NeuZhou — AI Agent Security & Tools"
+theme = "PaperMod"
+paginate = 10
+
+[params]
+  author = "Kang Zhou"
+  description = "Research and tools for securing the AI agent ecosystem"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = false
+  defaultTheme = "auto"
+  disableThemeToggle = false
+
+  [params.homeInfoParams]
+    Title = "NeuZhou 🦀"
+    Content = "AI agent security research & open-source tools. By [Kang Zhou](https://github.com/NeuZhou)."
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/NeuZhou"
+
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    keys = ["title", "permalink", "summary", "content"]
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[[menu.main]]
+  identifier = "search"
+  name = "Search"
+  url = "/search/"
+  weight = 1
+
+[[menu.main]]
+  identifier = "archives"
+  name = "Archives"
+  url = "/archives/"
+  weight = 2
+
+[[menu.main]]
+  identifier = "tags"
+  name = "Tags"
+  url = "/tags/"
+  weight = 3
+
+[[menu.main]]
+  identifier = "categories"
+  name = "Categories"
+  url = "/categories/"
+  weight = 4
+
+[markup.goldmark.renderer]
+  unsafe = true
